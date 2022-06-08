@@ -1,0 +1,9 @@
+.ras {
+    color: brown; background-color: rgb(110, 202, 48); 
+} 
+.sds{
+    color:hotpink; background-color: blue; animation: backwards; font-size: 21px ; font-style: italic;
+}
+.pass{
+background-color: coral;
+}

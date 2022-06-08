@@ -1,0 +1,60 @@
+.card {
+    width: 66%;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    margin: 0 0 0 136px;
+    padding: 42px;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+
+}
+.col-6 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+.form-group{
+    margin-bottom: 15px;
+}
+.blo{
+display: block;
+}
+
+.label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.form-control {
+    display: block;
+    width: 50%;
+    height: 16px;
+    padding: 7px 13px;
+    font-size: 11px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    border-color: #555;
+}
+.worm-control {
+    display: block;
+    width: 50%;
+    height: 31px;
+    padding: 7px 13px;
+    font-size: 11px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    width: 206px;
+    border-radius: 5px;
+    border-color: #555;
+
+}

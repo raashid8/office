@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Harley Davidson</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&display=swap");
+
+    @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Orelega+One&display=swap");
+
+    @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Montserrat:wght@300&family=Orelega+One&display=swap");
+
+    @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Montserrat:wght@300&family=Orelega+One&family=Oswald:wght@300&display=swap");
+    body {
+      background: linear-gradient(
+        90deg,
+        rgba(64, 66, 70, 1) 0%,
+        rgb(0 0 0) 48%,
+        rgba(123, 136, 152, 1) 100%
+      );
+    }
+
+    .cr {
+      position: relative;
+      text-align: center;
+      color: white;
+      background: linear-gradient(
+        90deg,
+        rgba(64, 66, 70, 1) 0%,
+        rgb(0 0 0) 48%,
+        rgba(123, 136, 152, 1) 100%
+      );
+    }
+
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .cr h1 {
+      font-size: 60px;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      font-family: "Abril Fatface";
+      position: relative;
+      margin-top: -335px;
+    }
+    .cr h6 {
+      font-family: "Abril Fatface, cursive";
+    }
+    .scnd {
+      background-color: #ff6501;
+      padding: 40px;
+      margin: 0px;
+      text-align: center;
+    }
+    .thrd {
+      background-color: #292d37;
+      padding: 40px;
+      text-align: center;
+    }
+    .right h6 {
+      font-family: "Bebas Neue", cursive;
+      color: white;
+      margin: 0px;
+      font-size: 26px;
+      text-align: center;
+    }
+    .left h6 {
+      font-family: "Bebas Neue", cursive;
+      color: white;
+      margin: 0px;
+      font-size: 26px;
+      text-align: center;
+    }
+    .thrd h6 {
+      font-family: "Bebas Neue", cursive;
+      color: white;
+      font-size: 26px;
+    }
+    .right {
+      background-color: #ff6501;
+      width: 50%;
+      height: 160px;
+      float: left;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .left {
+      background-color: #292d37;
+      width: 50%;
+      height: 160px;
+      float: right;
+      text-align: center;
+      padding: 40px;
+    }
+    .sec {
+      background-image: url("./Images/harley/bg-2.png");
+      object-fit: contain;
+      height: 30%;
+      object-fit: contain;
+      height: 30%;
+      background-repeat: round;
+      opacity: 0.2;
+    }
+    .third-sec img {
+      background-repeat: no-repeat;
+      opacity: 1;
+    }
+
+    .frst-img img {
+      opacity: 0.6;
+      height: 760px;
+    }
+
+    .cent-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: rgb(253, 253, 253);
+      transform: translate(-54%, -100%);
+    }
+
+    .frst-img {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    .top-right {
+      position: absolute;
+      top: 130px;
+      right: 175px;
+    }
+    .top-left {
+      position: absolute;
+      top: 130px;
+      left: 175px;
+    }
+    .top-center {
+      position: absolute;
+      top: 500px;
+      left: 175px;
+      right: 175px;
+    }
+    .top-left h1 {
+      font-family: "Orelega One", cursive;
+      text-align: justify;
+      font-size: 55px;
+    }
+    .top-left h6 {
+      font-family: "IBM Plex Sans", sans-serif;
+      text-align: justify;
+      font-size: x-large;
+    }
+    .top-left button {
+      font-family: "IBM Plex Sans", sans-serif;
+      color: white;
+      background-color: #ff6501;
+      width: 134px;
+      height: 38px;
+      float: left;
+      border: none;
+    }
+    .flex {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+    .f-44 {
+      background-color: black;
+      color: white;
+      border: 10px solid #ff6501;
+      opacity: 1;
+    }
+    .flex button {
+      font-family: "IBM Plex Sans", sans-serif;
+      color: white;
+      background-color: #ff6501;
+      width: 100px;
+      height: 30px;
+      margin-left: 75px;
+      border: none;
+    }
+    .flex h6 {
+      color: white;
+      text-align: center;
+      font-family: "Orelega One", cursive;
+      font-size: 25px;
+      padding-top: 60px;
+    }
+    .secnd-img {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+    .secnd-img h4 {
+      text-align: justify;
+      font-family: "Montserrat", sans-serif;
+      font-size: 30px;
+    }
+    .secnd-img span {
+      color: #00ecf7;
+    }
+
+    .secnd-top-center {
+      position: absolute;
+      top: 500px;
+      left: 175px;
+      right: 175px;
+    }
+    .secnd-top-right {
+      position: absolute;
+      top: 180px;
+      right: 145px;
+    }
+    .secnd-top-left {
+      position: absolute;
+      top: 180px;
+      left: 205px;
+    }
+    .secnd-bottom-right {
+      position: absolute;
+      bottom: 290px;
+      right: 175px;
+    }
+    .secnd-bottom-left {
+      position: absolute;
+      bottom: 290px;
+      left: 161px;
+    }
+    .last-sec button {
+      font-family: "IBM Plex Sans", sans-serif;
+      color: white;
+      background-color: #ff6501;
+      width: 100px;
+      height: 30px;
+      border: none;
+    }
+    .last-sec h1 {
+      padding-top: 50px;
+      color: aliceblue;
+      font-family: 'Orelega One', cursive;
+    }
+    .last-sec h6 {
+      color: white;
+      font-size: 11px;
+      padding-bottom: 10px;
+    }
+    .last-sec {
+      padding-bottom: 10px;
+    }
+    .final-secc {
+      background-color: #ff6501;
+      color: white;
+      text-align: center;
+      padding: 13px;
+      font-size: 12px;
+    }
+    .finaal-secc h1 {
+      color: aliceblue;
+      text-align: center;
+      padding: 30px;
+      font-family: "Orelega One", cursive;
+    }
+    .last-top-right {
+      position: absolute;
+      top: 130px;
+      right: 250px;
+    }
+    .last-top-left {
+      position: absolute;
+      top: 130px;
+      left: 270px;
+    }
+
+    .last-top-right h1 {
+      font-family: "Orelega One", cursive;
+      text-align: justify;
+      font-size: 55px;
+    }
+    .last-top-right h6 {
+      font-family: "IBM Plex Sans", sans-serif;
+      text-align: justify;
+      font-size: x-large;
+    }
+    .last-top-right button {
+      font-family: "IBM Plex Sans", sans-serif;
+      color: white;
+      background-color: #ff6501;
+      width: 134px;
+      height: 38px;
+      border: none;
+      float: left;
+    }
+    footer {
+      background-color: rgb(82, 80, 80);
+      text-align: center;
+      padding: 35px;
+      color: white;
+    }
+    footer a {
+      color: orange;
+      /* text-decoration: underline; */
+    }
+    footer a:hover {
+      color: orange;
+    }
+  </style>
+
+  <body>
+    <div class="cr">
+      <img
+        src="./Images/harley/1.png"
+        style="width: 41% !important"
+        class="img-fluid"
+        alt=""
+      />
+
+      <div class="centered">
+        <h1>Raw, Blacked-Out,<br />Stripped-Down,<br />Custoum Style,</h1>
+      </div>
+      <div>
+        <img src="./Images/harley/top3.png" class="img-fluid center" alt="" />
+      </div>
+    </div>
+    <div class="right">
+      <img
+        src="./Images/harley/motorcycle (1).png"
+        width="60px"
+        class="img-fluid"
+        alt=""
+      />
+      <h6>Motorcycle</h6>
+    </div>
+    <div class="left">
+      <img
+        src="./Images/harley/shopping-cart (2).png"
+        width="60px"
+        class="img-fluid"
+        alt=""
+      />
+      <h6>Shopping Tools</h6>
+    </div>
+    <div class="container">&nbsp;</div>
+
+    <div class="frst-img">
+      <img
+        src="./Images/harley/bg-2.png"
+        width="100%"
+        class="img-fluid"
+        style="opacity: 0.2; width: 80%"
+        alt=""
+      />
+
+      <div class="top-left">
+        <h6>New Rider</h6>
+        <h1>
+          New Rider<br />
+          Course<br />
+          Overview
+        </h1>
+        <button>View More</button>
+      </div>
+      <div class="top-right">
+        <img
+          src="./Images/harley/fourth.jpg"
+          style="
+            height: 277px;
+            width: 90%;
+            opacity: 0.8; /* border-radius: 0px; */
+            border-top-left-radius: 10% !important;
+            border-top-right-radius: 10% !important;
+          "
+          class="img-fluid"
+          alt=""
+        />
+      </div>
+      <div class="top-center">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+          itaque sequi libero fugiat eaque earum modi quos saepe quasi, ipsum
+          quia quam corrupti omnis facere nulla nostrum molestiae magnam id unde
+          expedita eius est a consectetur atque. Consectetur rem odit distinctio
+          voluptatem, totam impedit!
+        </p>
+      </div>
+    </div>
+    <!-- Section with imagess  -->
+
+    <div class="flex">
+      <div>
+        <img
+          src="./Images/harley/tt1.jpg"
+          style="opacity: 0.7; height: 220px; width: 270px"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="./Images/harley/tt4.jpg"
+          style="opacity: 0.7; height: 220px; width: 270px"
+          alt=""
+        />
+      </div>
+      <div class="f-44" style="width: 270px">
+        <h6>Need to know</h6>
+        <button>View More</button>
+      </div>
+      <div style="width: 270px">
+        <img
+          src="./Images/harley/tt2.jpg"
+          style="opacity: 0.7; height: 220px; width: 270px"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="./Images/harley/tt3.jpg"
+          style="opacity: 0.7; height: 220px; width: 268px"
+          alt=""
+        />
+      </div>
+    </div>
+    <!-- End of  Section with imagess -->
+    <!-- IMAGE WITH LOGO SECTION  -->
+    <section>
+      <div class="secnd-img">
+        <img
+          src="./Images/harley/adam-rhodes-XvZrOCqTZPw-unsplash.jpg"
+          class="img-fluid"
+          alt=""
+        />
+        <div class="secnd-top-left">
+          <img src="./Images/harley/m11.png" class="img-fluid" alt="" />
+          <h4>How much does it cost</h4>
+          <span>View More</span>
+        </div>
+        <div class="secnd-top-right">
+          <img src="./Images/harley/r11.png" class="img-fluid" alt="" />
+          <h4>What will I need to register</h4>
+          <span>View More</span>
+        </div>
+        <div class="secnd-bottom-right">
+          <img src="./Images/harley/m22.png" class="img-fluid" alt="" />
+          <h4>What will I need to register</h4>
+          <span>View More</span>
+        </div>
+        <div class="secnd-bottom-left">
+          <img src="./Images/harley/gear.png" class="img-fluid" alt="" />
+          <h4>What will I need to register</h4>
+          <span>View More</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- END IMAGE WITH LOGO SECTION  -->
+    <!-- NEW exdr section -->
+    <div class="container-fluid" style="margin: 0px; padding: 0px">
+      <div class="row" style="width: 100%">
+        <div class="col-lg-6">
+          <img
+            src="./Images/harley/hrtank.jpg"
+            class="img-fluid"
+            style="height: 753px; width: 100%"
+            alt=""
+          />
+        </div>
+        <div class="col-lg-6 last-sec" style="margin: 0px; padding: 0px">
+          <h1>
+            INTODUCING THE ALL-<br />
+            NEW FXDR1124
+          </h1>
+          <h6>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nihil
+            molestiae, voluptates officiis vero veniam enim velit fugiat
+            temporibus perspiciatis? Sequi, nam.
+          </h6>
+          <button>read more</button>
+          <div class="row">
+            <div class="col-lg-6" style="margin: 0px; padding: 0px">
+              <img
+                src="./Images/harley/hrseat.jpg"
+                class="img-fluid"
+                style="width: 100%"
+                alt=""
+              />
+            </div>
+            <div class="col-lg-6" style="margin: 0px; padding: 0px">
+              <img
+                src="./Images/harley/hrsilencer.jpg"
+                class="img-fluid"
+                style="width: 100%"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid final-sec" style="margin: 0px; padding: 0px">
+      <div class="row" style="width: 100%">
+        <div class="col-lg-6">
+          <img
+            src="./Images/harley/hrsecndbike.jpg"
+            class="img-fluid"
+            style="height: 350px; width: 100%"
+            alt=""
+          />
+          <div class="final-secc">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+              necessitatibus a nisi temporibus consequuntur saepe error
+              mollitia, eius libero dignissimos aperiam praesentium. Quidem
+              soluta expedita magnam voluptatibus et. Animi minus eum laboriosam
+              laudantium.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6 finaal-secc" style="margin: 0px; padding: 0px">
+          <h1>More Roads to -ThD</h1>
+          <div class="row">
+            <div class="col-lg-12" style="margin: 0px; padding: 0px">
+              <img
+                src="./Images/harley/seat.jpg"
+                class="img-fluid"
+                style="width: 100%; height: 330px"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End of NEW exdr section  -->
+
+    <!-- Final section-2 -->
+    <div class="frst-img">
+      <img
+        src="./Images/harley/bg-2.png"
+        width="100%"
+        class="img-fluid"
+        style="opacity: 0.2; width: 65%; height: 45%"
+        alt=""
+      />
+
+      <div class="last-top-right">
+        <h6>Styling + Feature</h6>
+        <h1>
+          A Great Leap<br />
+          Forward In The <br />
+          Dark Arts
+        </h1>
+        <button>View More</button>
+      </div>
+      <div class="last-top-left">
+        <img
+          src="./Images/harley/blackharley.jpg"
+          style="height: 277px; width: 90%; opacity: 0.9"
+          class="img-fluid"
+          alt=""
+        />
+      </div>
+      <div class="top-center">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+          itaque sequi libero fugiat eaque earum modi quos saepe quasi, ipsum
+          quia quam corrupti omnis facere nulla nostrum molestiae magnam id unde
+          expedita eius est a consectetur atque. Consectetur rem odit distinctio
+          voluptatem, totam impedit!
+        </p>
+      </div>
+    </div>
+    <!-- End of Final section-2 -->
+
+    <!-- footer section -->
+    <footer>
+      <a href="#!"> Template</a> Created by
+      <a
+        href="https://in.linkedin.com/in/muhammed-raashid-40a4621b7"
+        target="_blank"
+        >Raashid
+      </a>
+    </footer>
+    <!--END  footer section -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

@@ -1,0 +1,85 @@
+
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .cr {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+      .gradient-text {  
+      
+          background-color: rgb(99,58,255);;
+          background-image:  linear-gradient(90deg, rgba(99,58,255,1) 0%, rgba(175,33,247,1) 100%);				
+          background-image: conic-gradient (90deg, rgba(99,58,255,1) 0%, rgba(175,33,247,1) 100%);
+      
+          background-color: rgb(99,58,255);;
+          background-image: linear-gradient(90deg, rgba(99,58,255,1) 0%, rgba(175,33,247,1) 100%);
+          background-size: 100%;
+          -webkit-text-fill-color: transparent; 
+          -moz-text-fill-color: transparent;
+      }
+      .ttv{
+          display: inline-block;
+      
+      }
+      .flex-container {
+        display: flex;
+      
+      }
+      .navbar .nav-item{
+        color:#ffc905cc ;
+        background-color: transparent;
+      }
+      
+      .flex-container > div {
+      
+        margin: 10px;
+        padding: 13px;
+        font-size: 23px;
+      }
+      .col{
+          width: 24.333333%;
+          
+      }
+      .card-img, .card-img-bottom, .card-img-top {
+          width: 11%;
+      }
+      .btn{
+          background-color: rgb(187, 187, 187);
+          
+      }
+      .ant{
+          text-align: center;
+      }
+      .flex{
+          display: flex;
+          justify-content: center;
+      }
+      .pad{
+          padding-top: 10px;
+          padding-left: 10px;
+          padding-right: 10px;
+      }
+      .blo{
+          display: block;
+          margin: 0 0 auto;
+      }
+      .footer{
+          background-color:  rgb(22, 22, 22);
+          color: white;
+      }    
+      .text-reset{
+        text-decoration: none;
+      }
+      .naav{
+        color: white!important;
+        padding: 13px;
+      }
+      .cr button {
+        border-radius: 10px; 
+        padding: 10px;
+      }
